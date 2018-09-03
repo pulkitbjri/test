@@ -1,6 +1,5 @@
 buildscript {
 	ext {
-
 		springBootVersion = '2.0.4.RELEASE'
 	}
 	repositories {
@@ -26,14 +25,13 @@ repositories {
 
 
 dependencies {
-	compile 'org.postgresql:postgresql'
-
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-jdbc')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.0.4.RELEASE'
+    compile 'org.postgresql:postgresql'
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
