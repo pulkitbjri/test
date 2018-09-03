@@ -1,1 +1,1 @@
-web: build/install/test/bin/test
+web: gradle bootrun
